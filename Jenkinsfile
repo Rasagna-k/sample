@@ -18,7 +18,7 @@ pipeline {
                  stage ('Copy .war file to tomcat') {
              steps {
                  sh '''
-                       sudo cp $WORKSPACE/target/*.war /opt/tomcat/tomcat9/webapps/
+                       cp $WORKSPACE/target/*.war /opt/tomcat/tomcat9/webapps/
                     '''
              }
          }
